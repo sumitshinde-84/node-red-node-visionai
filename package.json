@@ -1,0 +1,30 @@
+{
+  "name": "@sumit_shinde_84/node-red-node-visionai",
+  "version": "1.0.0",
+  "description": "Train TensorFlow models using Teachable Machine and enable real-time object recognition and classification in Node-RED.",
+  "main": "node.js",
+  "node-red": {
+    "version": ">=2.0.0",
+    "nodes": {
+      "visionAI": "node.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Vision ai",
+    "Teachable machine",
+    "Defect monitoring",
+    "TensorFlow"
+  ],
+  "author": "sumit shinde",
+  "license": "MIT",
+  "dependencies": {
+    "@patrick-paludo/teachablemachine-node": "^1.2.3"
+  }
+}

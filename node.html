@@ -1,0 +1,30 @@
+<script type="text/javascript">
+    RED.nodes.registerType('visionAI',{
+        category: 'visionAI',
+        color: '#1a75ff',
+        defaults: {
+            "name": {value: ""},
+            "modeluri":{value: "", required:true},
+        },
+        inputs:1,
+        outputs:1,
+        icon: "font-awesome/fa-eye",
+        label: function() {
+            return this.name||"visionAI";
+        },
+    })
+ </script>
+ 
+ <script type="text/html" data-template-name="visionAI">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-modelUri">
+            <i class="icon-tag"></i>
+            Model URI
+        </label>
+        <input type="text" id="node-input-modeluri" placeholder="Uri">
+    </div>
+ </script>
